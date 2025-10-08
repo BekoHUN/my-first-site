@@ -12,3 +12,6 @@ footer { padding: 24px 0; border-top: 1px solid #ddd; color: #555; }
 }
 .cta:active { transform: translateY(1px); }
 img { max-width: 100%; height: auto; }
+.cta:hover {
+  background: #f3f3f3;
+}
