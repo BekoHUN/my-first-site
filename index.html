@@ -3,25 +3,165 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Névjegy – Saját első oldal</title>
-  <meta name="description" content="Első gyakorló oldalam – HTML és CSS">
+  <title>RoxDog Kutyasuli | Személyre szabott kutyakiképzés</title>
+  <meta name="description" content="Kutyasuli és egyéni tréning: alapengedelmesség, póráz-kezelés, szocializáció. Pozitív, érthető, eredményes." />
   <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header class="container">
-    <h1>Szia! 👋 Csiri Rebeka vagyok, próbálkozó</h1>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Fő navigáció">
+      <a class="brand" href="#home">
+  <img src="assets/logo.svg" alt="" aria-hidden="true" />
+  <span>RoxDog Kutyasuli</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="navmenu" aria-label="Menü">☰</button>
+      <ul id="navmenu" class="navmenu">
+        <li><a href="#szolgaltatasok">Szolgáltatások</a></li>
+        <li><a href="#modszertan">Módszertan</a></li>
+        <li><a href="#arak">Árak</a></li>
+        <li><a href="#gyik">GYIK</a></li>
+        <li><a class="cta" href="#kapcsolat">Időpontot kérek</a></li>
+      </ul>
+    </nav>
+    <section id="home" class="hero container">
+      <div class="hero-text">
+        <h1>Nyugodt kutya, nyugodt gazdi.</h1>
+        <p>Barátságos, érthető és bizonyított tréning – kölyöktől a felnőtt kutyáig.</p>
+        <div class="hero-actions">
+          <a class="btn primary" href="#kapcsolat">Első konzultáció</a>
+          <a class="btn" href="#szolgaltatasok">Mit tanulunk?</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/hero-dog.jpg" alt="Mosolygós kutya pórázzal" />
+      </figure>
+    </section>
   </header>
+  <main>
+    <section id="szolgaltatasok" class="container section">
+      <h2>Szolgáltatások</h2>
+      <div class="grid cards">
+        <article class="card">
+          <h3>Alapengedelmesség</h3>
+          <p>Ül, fekszik, marad, behívás. Stabil alapok hétköznapi helyzetekre.</p>
+        </article>
+        <article class="card">
+          <h3>Póráz-kezelés</h3>
+          <p>Húzásmentes séta, figyelem fenntartása kinti ingerek mellett.</p>
+        </article>
+        <article class="card">
+          <h3>Szocializáció</h3>
+          <p>Más kutyákkal és emberekkel való nyugodt, magabiztos viselkedés.</p>
+        </article>
+      </div>
+    </section>
+    <section id="modszertan" class="container section">
+      <h2>Módszertan</h2>
+      <p>Pozitív megerősítés, kis lépések, érthető feladatok. Minden óra után kapsz rövid, otthon követhető feladatlistát.</p>
+      <ul class="checklist">
+        <li>Rövid, fókuszált gyakorlatok</li>
+        <li>Egyértelmű jelzések</li>
+        <li>Gazdi–kutya kapcsolat erősítése</li>
+      </ul>
+    </section>
+    <section id="arak" class="container section">
+      <h2>Árak</h2>
+      <div class="grid cards pricecards">
+        <article class="card">
+          <h3>Bevezető óra</h3>
+          <p class="price">15 000 Ft</p>
+          <p>Állapotfelmérés + egyéni terv</p>
+        </article>
+        <article class="card featured">
+          <h3>3 alkalmas bérlet</h3>
+          <p class="price">32 000 Ft</p>
+          <p>Rugalmas időpontok, gyors haladás</p>
+        </article>
+        <article class="card">
+          <h3>6 alkalmas bérlet</h3>
+          <p class="price">85 000 Ft</p>
+          <p>Mélyebb rögzülés, tartós eredmény</p>
+        </article>
+      </div>
+      <p class="note">Az árak tájékoztató jellegűek.</p>
+    </section>
+    <section id="gyik" class="container section">
+      <h2>Gyakori kérdések</h2>
+      <details>
+        <summary>Mennyi ideig tart egy óra?</summary>
+        <p>Általában 50 perc, kutya figyelméhez igazítva.</p>
+      </details>
+      <details>
+        <summary>Hány hónapos kortól jöhet kölyök?</summary>
+        <p>Az első oltások után, rövid és játékos feladatokkal.</p>
+      </details>
+      <details>
+        <summary>Esőben elmarad az óra?</summary>
+        <p>Nem feltétlen. Időjárástól és helyszíntől függően egyeztetünk.</p>
+      </details>
+    </section>
+    <section id="rolam" class="container section reveal">
+  <h2>Rólam</h2>
+  <div class="about">
+    <img class="about-photo" src="assets/trainer.jpg" alt="Kutyatréner portré" />
+    <div class="about-text">
+      <p>Csiri Rebeka vagyok, kutyatréner. Pozitív megerősítéssel,
+        érthető lépésekkel dolgozom. Célom, hogy a gazdi és kutya
+        magabiztos, nyugodt párost alkosson a hétköznapokban.</p>
+      <ul class="checklist">
+        <li>Alapengedelmesség kölyöktől</li>
+        <li>Póráz-kezelés, behívás</li>
+        <li>Szocializáció és fókusz</li>
+      </ul>
+      <div class="hero-actions">
+        <a class="btn primary" href="#kapcsolat">Első konzultáció</a>
+        <a class="btn" href="#szolgaltatasok">Szolgáltatások</a>
+      </div>
+    </div>
+  </div>
+</section>
+    <section id="kapcsolat" class="container section">
+      <h2>Időpontkérés</h2>
+    
+      <form id="contactForm" action="https://formspree.io/f/xldpwwlb" method="POST">
 
-  <main class="container">
-    <section>
-      <p>Ez az első saját oldalam. Itt fogok gyakorolni HTML/CSS-t.</p>
-      <a class="cta" href="mailto:csiri.rebeka@outlook.hu">Írj nekem</a>
+     <input type="hidden" name="_subject" value="Új időpontkérés – RoxDog Kutyasuli">
+     <label class="hp">Ne töltsd ki:
+     <input type="text" name="_gotcha" tabindex="-1" autocomplete="off">
+      </label>
+        <label>
+          E-mail
+          <input type="email" name="email" required />
+        </label>
+        <label>
+          Kutya neve
+          <input type="text" name="dog" />
+        </label>
+        <label>
+          Kutya mérete
+          <select name="size">
+            <option value="">Válassz…</option>
+            <option>Kicsi</option>
+            <option>Közepes</option>
+            <option>Nagy</option>
+          </select>
+        </label>
+        <label>
+          Üzenet
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <button class="btn primary" type="submit">Küldés</button>
+        <p id="formStatus" class="form-status" role="status" aria-live="polite"></p>
+      </form>
     </section>
   </main>
-
-  <footer class="container">
-    <small>&copy; <span id="year"></span> Csiri Rebeka</small>
-    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; <span id="year"></span> Roxdog Kutyasuli • <a href="mailto:csiri.rebeka@outlook.hu">csiri.rebeka@outlook.hu</a></small>
+    </div>
   </footer>
 </body>
 </html>
