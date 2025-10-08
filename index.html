@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="hu">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Névjegy – Saját első oldal</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="container">
+    <h1>Szia! 👋 Csiri Rebeka vagyok, próbálkozó</h1>
+  </header>
+
+  <main class="container">
+    <section>
+      <p>Ez az első saját oldalam. Itt fogok gyakorolni HTML/CSS-t.</p>
+      <a class="cta" href="mailto:csiri.rebeka@outlook.hu">Írj nekem</a>
+    </section>
+  </main>
+
+  <footer class="container">
+    <small>&copy; <span id="year"></span> Csiri Rebeka</small>
+    <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+  </footer>
+</body>
+</html>
